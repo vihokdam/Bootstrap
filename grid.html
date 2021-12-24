@@ -1,0 +1,222 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-2">            
+            <div class="col border bg-light">
+                Column
+            </div>
+            <div class="col border bg-light">
+                Column
+            </div>
+            <div class="col border bg-light">
+                Column
+            </div>
+        </div>
+    </div>
+    <h5>Equal-width</h5>
+    <div class="container">
+        <div class="row">
+          <div class="col border bg-light">
+            1 of 2
+          </div>
+          <div class="col border bg-light">
+            2 of 2
+          </div>
+        </div>
+        <div class="row">
+          <div class="col border bg-light">
+            1 of 3
+          </div>
+          <div class="col border bg-light">
+            2 of 3
+          </div>
+          <div class="col border bg-light">
+            3 of 3
+          </div>
+        </div>
+    </div>
+    <h5>Setting one column width</h5>
+    <div class="container">
+        <div class="row">
+          <div class="col border bg-light">
+            1 of 3
+          </div>
+          <div class="col-6 border bg-light">
+            2 of 3 (wider)
+          </div>
+          <div class="col border bg-light">
+            3 of 3
+          </div>
+        </div>
+        <div class="row">
+          <div class="col border bg-light">
+            1 of 3
+          </div>
+          <div class="col-5 border bg-light">
+            2 of 3 (wider)
+          </div>
+          <div class="col border bg-light">
+            3 of 3
+          </div>
+        </div>
+    </div>
+    <h5>Variable width content</h5>
+    <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col col-lg-2 border bg-light">
+            1 of 3
+          </div>
+          <div class="col-md-auto border bg-light">
+            Variable width content Lorem ipsum dolor sit amet.
+          </div>
+          <div class="col col-lg-2 border bg-light">
+            3 of 3
+          </div>
+        </div>
+        <div class="row">
+          <div class="col border bg-light">
+            1 of 3
+          </div>
+          <div class="col-md-auto border bg-light">
+            Variable width content Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, nam.
+          </div>
+          <div class="col col-lg-2 border bg-light">
+            3 of 3
+          </div>
+        </div>
+    </div>
+    <h5>All breakpoints</h5>
+    <div class="container">
+        <div class="row">
+          <div class="col border bg-light">col</div>
+          <div class="col border bg-light">col</div>
+          <div class="col border bg-light">col</div>
+          <div class="col border bg-light">col</div>
+        </div>
+        <div class="row">
+          <div class="col-8 border bg-light">col-8</div>
+          <div class="col-4 border bg-light">col-4</div>
+        </div>
+    </div>
+    <h5>Stacked to horizontal</h5>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-8 border bg-light">col-sm-8</div>
+          <div class="col-sm-4 border bg-light">col-sm-4</div>
+        </div>
+        <div class="row">
+          <div class="col-sm border bg-light">col-sm</div>
+          <div class="col-sm border bg-light">col-sm</div>
+          <div class="col-sm border bg-light">col-sm</div>
+        </div>
+    </div>
+    <h5>Mix and match</h5>
+    <div class="container">
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="row">
+          <div class="col-md-8 border bg-light">.col-md-8</div>
+          <div class="col-6 col-md-4 border bg-light">.col-6 .col-md-4</div>
+        </div>
+      
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+        <div class="row">
+          <div class="col-6 col-md-4 border bg-light">.col-6 .col-md-4</div>
+          <div class="col-6 col-md-4 border bg-light">.col-6 .col-md-4</div>
+          <div class="col-6 col-md-4 border bg-light">.col-6 .col-md-4</div>
+        </div>
+      
+        <!-- Columns are always 50% wide, on mobile and desktop -->
+        <div class="row">
+          <div class="col-6 border bg-light">.col-6</div>
+          <div class="col-6 border bg-light">.col-6</div>
+        </div>
+    </div>
+    <h5>Row columns</h5>
+    <div class="container">
+        <div class="row row-cols-2">
+          <div class="col border bg-light">Column</div>
+          <div class="col border bg-light">Column</div>
+          <div class="col border bg-light">Column</div>
+          <div class="col border bg-light">Column</div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row row-cols-3">
+          <div class="col border bg-light">Column</div>
+          <div class="col border bg-light">Column</div>
+          <div class="col border bg-light">Column</div>
+          <div class="col border bg-light">Column</div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row row-cols-auto">
+          <div class="col border bg-light">Column</div>
+          <div class="col border bg-light">Column</div>
+          <div class="col border bg-light">Column</div>
+          <div class="col border bg-light">Column</div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row row-cols-4">
+          <div class="col border bg-light">Column</div>
+          <div class="col border bg-light">Column</div>
+          <div class="col border bg-light">Column</div>
+          <div class="col border bg-light">Column</div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+          <div class="col border bg-light">Column</div>
+          <div class="col border bg-light">Column</div>
+          <div class="col border bg-light">Column</div>
+          <div class="col border bg-light">Column</div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row row-cols-2 row-cols-lg-3">
+          <div class="col border bg-light">Column</div>
+          <div class="col border bg-light">Column</div>
+          <div class="col border bg-light">Column</div>
+          <div class="col border bg-light">Column</div>
+          <div class="col border bg-light">Column</div>
+          <div class="col border bg-light">Column</div>
+          <div class="col-4 col-lg-2 border bg-light">Column</div>
+          <div class="col-4 col-lg-2 border bg-light">Column</div>
+          <div class="col-4 col-lg-2 border bg-light">Column</div>
+          <div class="col-4 col-lg-2 border bg-light">Column</div>
+          <div class="col-4 col-lg-2 border bg-light">Column</div>
+          <div class="col-4 col-lg-2 border bg-light">Column</div>
+        </div>
+    </div>
+    <h5>Nesting</h5>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-3 border bg-light">
+            Level 1: .col-sm-3
+          </div>
+          <div class="col-sm-9 border bg-light">
+            <div class="row p-1">
+              <div class="col-8 col-sm-6 border bg-light">
+                Level 2: .col-8 .col-sm-6
+              </div>
+              <div class="col-4 col-sm-6 border bg-light">
+                Level 2: .col-4 .col-sm-6
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

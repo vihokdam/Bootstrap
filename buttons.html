@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h5>Example</h5>
+        <div class="bd-example">
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-light">Light</button>
+            <button type="button" class="btn btn-dark">Dark</button>            
+            <button type="button" class="btn btn-link">Link</button>
+        </div>
+
+        <h4>Disable text wrapping</h4>
+        <h5>Button tags</h5>
+        <div class="bd-example">
+            <a class="btn btn-primary" href="#" role="button">Link</a>
+            <button class="btn btn-primary" type="submit">Button</button>
+            <input class="btn btn-primary" type="button" value="Input">
+            <input class="btn btn-primary" type="submit" value="Submit">
+            <input class="btn btn-primary" type="reset" value="Reset">
+        </div>
+
+        <h5>Outline buttons</h5>
+        <div class="bd-example">
+            <button type="button" class="btn btn-outline-primary">Primary</button>
+            <button type="button" class="btn btn-outline-secondary">Secondary</button>
+            <button type="button" class="btn btn-outline-success">Success</button>
+            <button type="button" class="btn btn-outline-danger">Danger</button>
+            <button type="button" class="btn btn-outline-warning">Warning</button>
+            <button type="button" class="btn btn-outline-info">Info</button>
+            <button type="button" class="btn btn-outline-light">Light</button>
+            <button type="button" class="btn btn-outline-dark">Dark</button>
+        </div>
+
+        <h5>Sizes</h5>
+        <div class="bd-example">
+            <button type="button" class="btn btn-primary btn-lg">Large button</button>
+            <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+        </div>
+        <br>
+        <div class="bd-example">
+            <button type="button" class="btn btn-primary btn-sm">Small button</button>
+            <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+        </div>
+
+        <h5>Disabled state</h5>
+        <div class="bd-example">
+            <button type="button" class="btn btn-lg btn-primary" disabled="">Primary button</button>
+            <button type="button" class="btn btn-secondary btn-lg" disabled="">Button</button>
+        </div>
+        <br>
+        <div class="bd-example">
+            <a href="#" class="btn btn-primary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
+            <a href="#" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Link</a>
+        </div>
+
+        <h5>Block buttons</h5>
+        <div class="bd-example">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">Button</button>
+              <button class="btn btn-primary" type="button">Button</button>
+            </div>
+        </div>
+        <br>
+        <div class="bd-example">
+            <div class="d-grid gap-2 d-md-block">
+              <button class="btn btn-primary" type="button">Button</button>
+              <button class="btn btn-primary" type="button">Button</button>
+            </div>
+        </div>
+        <br>
+        <div class="bd-example">
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <button class="btn btn-primary" type="button">Button</button>
+              <button class="btn btn-primary" type="button">Button</button>
+            </div>
+        </div>
+        <br>
+        <div class="bd-example">
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <button class="btn btn-primary me-md-2" type="button">Button</button>
+              <button class="btn btn-primary" type="button">Button</button>
+            </div>
+        </div>
+
+        <h4>Button plugin</h4>
+        <h5>Toggle states</h5>
+        <div class="bd-example">
+            <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off" aria-pressed="false">Toggle button</button>
+            <button type="button" class="btn btn-primary active" data-bs-toggle="button" autocomplete="off" aria-pressed="true">Active toggle button</button>
+            <button type="button" class="btn btn-primary" disabled="" data-bs-toggle="button" autocomplete="off">Disabled toggle button</button>
+        </div>
+        <br>
+        <div class="bd-example">
+            <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Toggle link</a>
+            <a href="#" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true">Active toggle link</a>
+            <a href="#" class="btn btn-primary disabled" tabindex="-1" aria-disabled="true" role="button" data-bs-toggle="button">Disabled toggle link</a>
+        </div>
+    </div>
+    <script>
+        var button = document.getElementById('myButton')
+        var bsButton = new bootstrap.Button(button)
+
+        var buttons = document.querySelectorAll('.btn')
+        buttons.forEach(function (button) {
+        var button = new bootstrap.Button(button)
+        button.toggle()
+        })
+    </script>
+</body>
+</html>

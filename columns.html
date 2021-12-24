@@ -1,0 +1,240 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Columns</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <h4>Alignment</h4>
+    <h5>Vertical alignment</h5>
+    <div class="container">
+        <div class="row align-items-start border bg-light h-25">
+          <div class="col border bg-light">
+            One of three columns
+          </div>
+          <div class="col border bg-light">
+            One of three columns
+          </div>
+          <div class="col border bg-light">
+            One of three columns
+          </div>
+        </div>
+        <div class="row align-items-center border bg-light h-25">
+          <div class="col border bg-light">
+            One of three columns
+          </div>
+          <div class="col border bg-light">
+            One of three columns
+          </div>
+          <div class="col border bg-light">
+            One of three columns
+          </div>
+        </div>
+        <div class="row align-items-end border bg-light h-25">
+          <div class="col border bg-light">
+            One of three columns
+          </div>
+          <div class="col border bg-light">
+            One of three columns
+          </div>
+          <div class="col border bg-light">
+            One of three columns
+          </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row h-25 border bg-light">
+          <div class="col align-self-start border bg-light">
+            One of three columns
+          </div>
+          <div class="col align-self-center border bg-light">
+            One of three columns
+          </div>
+          <div class="col align-self-end border bg-light">
+            One of three columns
+          </div>
+        </div>
+    </div>
+    <h5>Horizontal alignment</h5>
+    <div class="container">
+        <div class="row justify-content-start mb-2">
+          <div class="col-4 border bg-light">
+            One of two columns
+          </div>
+          <div class="col-4 border bg-light">
+            One of two columns
+          </div>
+        </div>
+        <div class="row justify-content-center mb-2">
+          <div class="col-4 border bg-light">
+            One of two columns
+          </div>
+          <div class="col-4 border bg-light">
+            One of two columns
+          </div>
+        </div>
+        <div class="row justify-content-end mb-2">
+          <div class="col-4 border bg-light">
+            One of two columns
+          </div>
+          <div class="col-4 border bg-light">
+            One of two columns
+          </div>
+        </div>
+        <div class="row justify-content-around mb-2">
+          <div class="col-4 border bg-light">
+            One of two columns
+          </div>
+          <div class="col-4 border bg-light">
+            One of two columns
+          </div>
+        </div>
+        <div class="row justify-content-between mb-2">
+          <div class="col-4 border bg-light">
+            One of two columns
+          </div>
+          <div class="col-4 border bg-light">
+            One of two columns
+          </div>
+        </div>
+        <div class="row justify-content-evenly mb-2">
+          <div class="col-4 border bg-light">
+            One of two columns
+          </div>
+          <div class="col-4 border bg-light">
+            One of two columns
+          </div>
+        </div>
+    </div>
+    <h5>Column wrapping</h5>
+    <div class="container">
+        <div class="row">
+          <div class="col-9 border bg-light">.col-9</div>
+          <div class="col-4 border bg-light">.col-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
+          <div class="col-6 border bg-light">.col-6<br>Subsequent columns continue along the new line.</div>
+        </div>
+    </div>
+    <h5>Column breaks</h5>
+    <div class="container">
+        <div class="row">
+          <div class="col-6 col-sm-3 border bg-light">.col-6 .col-sm-3</div>
+          <div class="col-6 col-sm-3 border bg-light">.col-6 .col-sm-3</div>
+      
+          <!-- Force next columns to break to new line -->
+          <div class="w-100"></div>
+      
+          <div class="col-6 col-sm-3 border bg-light">.col-6 .col-sm-3</div>
+          <div class="col-6 col-sm-3 border bg-light">.col-6 .col-sm-3</div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+          <div class="col-6 col-sm-4 border bg-light">.col-6 .col-sm-4</div>
+          <div class="col-6 col-sm-4 border bg-light">.col-6 .col-sm-4</div>
+      
+          <!-- Force next columns to break to new line at md breakpoint and up -->
+          <div class="w-100 d-none d-md-block"></div>
+      
+          <div class="col-6 col-sm-4 border bg-light">.col-6 .col-sm-4</div>
+          <div class="col-6 col-sm-4 border bg-light">.col-6 .col-sm-4</div>
+        </div>
+    </div>
+    <h4>Reordering</h4>
+    <h5>Order classes</h5>
+    <div class="container">
+        <div class="row">
+          <div class="col border bg-light">
+            First in DOM, no order applied
+          </div>
+          <div class="col order-5 border bg-light">
+            Second in DOM, with a larger order
+          </div>
+          <div class="col order-1 border bg-light">
+            Third in DOM, with an order of 1
+          </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+          <div class="col order-last border bg-light">
+            First in DOM, ordered last
+          </div>
+          <div class="col border bg-light">
+            Second in DOM, unordered
+          </div>
+          <div class="col order-first border bg-light">
+            Third in DOM, ordered first
+          </div>
+        </div>
+    </div>
+    <h4>Offsetting columns</h4>
+    <h5>Offset classes</h5>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-4 border bg-light">.col-md-4</div>
+          <div class="col-md-4 offset-md-4 border bg-light">.col-md-4 .offset-md-4</div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 offset-md-3 border bg-light">.col-md-3 .offset-md-3</div>
+          <div class="col-md-3 offset-md-3 border bg-light">.col-md-3 .offset-md-3</div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 offset-md-3 border bg-light">.col-md-6 .offset-md-3</div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-5 col-md-6 border bg-light">.col-sm-5 .col-md-6</div>
+          <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 border bg-light">.col-sm-5 .offset-sm-2 .col-md-6 .offset-md-0</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-5 col-lg-6 border bg-light">.col-sm-6 .col-md-5 .col-lg-6</div>
+          <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0 border bg-light">.col-sm-6 .col-md-5 .offset-md-2 .col-lg-6 .offset-lg-0</div>
+        </div>
+    </div>
+    <h5>Margin utilities</h5>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-4 border bg-light">.col-md-4</div>
+          <div class="col-md-4 ms-auto border bg-light">.col-md-4 .ms-auto</div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 ms-md-auto border bg-light">.col-md-3 .ms-md-auto</div>
+          <div class="col-md-3 ms-md-auto border bg-light">.col-md-3 .ms-md-auto</div>
+        </div>
+        <div class="row">
+          <div class="col-auto me-auto border bg-light">.col-auto .me-auto</div>
+          <div class="col-auto border bg-light">.col-auto</div>
+        </div>
+    </div>
+    <h5>Standalone column classes</h5>
+    <div class="col-3 bg-light p-3 border">
+        .col-3: width of 25%
+      </div>
+      <div class="col-sm-9 bg-light p-3 border">
+        .col-sm-9: width of 75% above sm breakpoint
+    </div>
+    <h5>class clearfix</h5>
+    <div class="clearfix">
+        <img src="..." class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+      
+        <p>
+          A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
+        </p>
+      
+        <p>
+          As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no tangible information at. It simply takes up space and should not really be read.
+        </p>
+      
+        <p>
+          And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h5>Responsive images</h5>
+        <img src="https://images.unsplash.com/photo-1637217204682-0508e4d17d40?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" class="img-fluid" alt="...">
+        <br>
+        <h5>Image thumbnails</h5>
+        <img src="https://images.unsplash.com/photo-1637217204682-0508e4d17d40?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" class="img-thumbnail" alt="...">
+        <h5>Aligning images</h5>
+        <div class="clearfix">
+            <img src="https://images.unsplash.com/photo-1637217204682-0508e4d17d40?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" class="rounded float-start" width="300" alt="...">
+            <img src="https://images.unsplash.com/photo-1637217204682-0508e4d17d40?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" class="rounded float-end" width="300" alt="...">
+        </div>
+        <br>
+        <div>
+            <img src="https://images.unsplash.com/photo-1637217204682-0508e4d17d40?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" class="rounded mx-auto d-block" width="300" alt="...">
+        </div>
+        <br>
+        <div class="text-center">
+            <img src="https://images.unsplash.com/photo-1637217204682-0508e4d17d40?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" class="rounded" width="300" alt="...">
+        </div>
+        <h5>Picture</h5>
+        <picture>
+            <source media="(min-width: 350px)" srcset="https://images.unsplash.com/photo-1633113089631-6456cccaadad?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" type="image/svg+xml">
+            <source media="(min-width: 650px)" srcset="https://images.unsplash.com/photo-1637196268676-ccfe49d8ba1c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" type="image/svg+xml">
+            <img src="https://images.unsplash.com/photo-1637090405819-417cd9583da4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" class="img-md img-thumbnail" alt="...">
+        </picture>
+    </div>
+</body>
+</html>
